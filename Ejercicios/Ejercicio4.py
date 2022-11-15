@@ -57,6 +57,12 @@ while (not opcion == 5):
     elif opcion == 4:
         # En que aula se encuentra el alumno ese DNI
         print("Buscar alunmo")
+        dni_introducido = input("Introduzca el DNI del alumno que quiera buscar")
+        alumno_encontrado_dni = ""
+        for key in alumno:
+            if alumno.get("DNI") == dni_introducido:
+                alumno_encontrado_dni = str(alumno)
+                print(alumno_encontrado_dni)
     elif opcion == 5:
         print("Adios")
     else:
